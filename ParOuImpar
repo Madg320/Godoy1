@@ -10,7 +10,7 @@ public class ParImpar {
 			System.out.println("Soma de numeros ímpares e pares:\n");
 			
 			for(i=0;i<=30;i++) {
-				if(i %2 !=0)
+				if(i *2 !=0)
 					impar += i;
 				else
 					par +=i;
