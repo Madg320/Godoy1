@@ -13,9 +13,9 @@ public class main {
 		System.out.println("Digite o segundo numero: \n");
 		int Numero2 = ler.nextInt();
 		if(Numero > Numero2) {
-			System.out.println("o maior numero é o " + Numero);
+			System.out.println("o maior numero eh o " + Numero);
 		}else {
-			System.out.println("o maior numero é o " + Numero2);
+			System.out.println("o maior numero eh o " + Numero2);
 		}
 
 	}
