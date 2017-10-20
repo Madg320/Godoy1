@@ -60,10 +60,10 @@ public void imprimir() {
 class Camarote Superior
 
 public class CamaroteSuperior extends Vip {
-float valor_adcional = 40;
+float valor_adicional = 40;
 public float retornaValor() {
 	float x = valorVip();
-	return (x + valor_adcional);
+	return (x + valor_adicional);
 }
 }
 
