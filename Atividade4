@@ -1,0 +1,85 @@
+
+
+Class Ingresso
+
+
+public class normal extends Ingresso {
+public void ingressoNormal() {
+	System.out.println("Ingresso normal");
+}
+	@Override
+	public float imprimeValor() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}
+
+///////////////////
+
+Class VIP
+
+public class Vip extends Ingresso {
+	float valor_ad = 10;
+	
+	public float valorVip() {
+		return valor+valor_ad;
+	}
+
+	@Override
+	public float imprimeValor() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+}
+
+
+/////////////////////////
+
+class CamaroteInferior
+
+public class CamaroteInferior extends Vip {
+private int localIngresso;
+
+private int getLocalIngresso() {
+	return localIngresso;
+}
+
+private void setLocalIngresso(int localIngresso) {
+	this.localIngresso = localIngresso;
+}
+public void imprimir() {
+	System.out.println(getLocalIngresso());
+	}
+}
+
+
+
+//////////////////////////////////////
+
+class Camarote Superior
+
+public class CamaroteSuperior extends Vip {
+float valor_adcional = 40;
+public float retornaValor() {
+	float x = valorVip();
+	return (x + valor_adcional);
+}
+}
+
+
+//////////////////////////
+
+
+public abstract class  Ingresso{
+public float valor = 20;
+
+
+public  float imprimeValor() {
+	return valor;
+}
+
+
+
+}
+
